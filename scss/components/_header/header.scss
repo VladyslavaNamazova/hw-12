@@ -1,0 +1,41 @@
+header {
+  
+    
+    .header__block{
+        padding-top: 25px;
+        max-width: 1577px;
+        background-color: $header-bg;
+
+        .header__info{
+
+            background-color: $menu-color;
+
+           .header_link_menu__wrapper{
+            
+
+            display: flex;
+            justify-content: center;
+
+            .header_menu__link{
+                padding: 35px 30px 35px 30px;
+
+                &:hover{
+                    background-color: $header-bg-pointer ;
+                    cursor: pointer
+                }
+
+                .header__link{
+                    color: $text-color;
+                    font-size: 15px;
+                    text-decoration: none;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+           }
+        }
+    }
+}
+
+
+

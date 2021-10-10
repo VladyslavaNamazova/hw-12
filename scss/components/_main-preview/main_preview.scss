@@ -1,0 +1,48 @@
+.main_preview__block{
+        padding-top: 15px;
+        max-width: 1577px;
+        background-color: $header-bg;
+
+        .main_preview.container {
+                display: flex;
+                justify-content: space-between;
+                .main_preview__article{
+                        margin-right: 45px;
+                        .main_preview__item{
+                                font-size: 25px;
+                        }
+                        .main_preview__text{
+                                font-size: 25px;
+                        }
+                        .main_preview__button{
+                                padding-top: 10px;
+                                font-size: 25px;
+                                button{
+                             background-color: $header-bg-pointer;
+                             padding: 10px 15px 10px 15px;
+                             
+                             border-radius: 5px;
+                             text-align: center;
+                             text-decoration: none; 
+                             margin-top: 50px;
+
+                             &:hover{
+                                     background-color: $menu-color;
+                                     cursor: pointer;
+                             }
+                                   }
+
+                        }
+                }
+                
+        }
+
+
+
+
+}
+
+
+
+   
+

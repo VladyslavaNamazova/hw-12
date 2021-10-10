@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  max-width: 1283px;
+  margin: 0 auto;
+}
+
+.about_us_main__block .about_us__info.container {
+  display: flex;
+  justify-content: space-between;
+}
+.about_us_main__block .about_us__info.container .about_us_left__info {
+  margin-right: 50px;
+  font-size: 25px;
+}
+.about_us_main__block .about_us__info.container .about_us_left__info .about_us__button {
+  padding-top: 10px;
+}
+.about_us_main__block .about_us__info.container .about_us_left__info .about_us__button button {
+  background-color: white;
+  padding: 10px 15px 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 100px;
+}
+.about_us_main__block .about_us__info.container .about_us_left__info .about_us__button button:hover {
+  background-color: #313030;
+  cursor: pointer;
+}
+.about_us_main__block .about_us__info.container .about_us_right__info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 641.5px;
+  margin: 0 auto;
+  font-size: 25px;
+}
+.about_us_main__block .about_us__info.container .about_us_right__info .about_us__block {
+  flex: 0 1 50%;
+  min-height: 100px;
+  margin-bottom: 20px;
+}
+.about_us_main__block .about_us__info.container .about_us_right__info .about_us__block img {
+  width: 40px;
+  height: 40px;
+}
+
+header .header__block {
+  padding-top: 25px;
+  max-width: 1577px;
+  background-color: #f6f2f2;
+}
+header .header__block .header__info {
+  background-color: #313030;
+}
+header .header__block .header__info .header_link_menu__wrapper {
+  display: flex;
+  justify-content: center;
+}
+header .header__block .header__info .header_link_menu__wrapper .header_menu__link {
+  padding: 35px 30px 35px 30px;
+}
+header .header__block .header__info .header_link_menu__wrapper .header_menu__link:hover {
+  background-color: #ff2d2d;
+  cursor: pointer;
+}
+header .header__block .header__info .header_link_menu__wrapper .header_menu__link .header__link {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main_preview__block {
+  padding-top: 15px;
+  max-width: 1577px;
+  background-color: #f6f2f2;
+}
+.main_preview__block .main_preview.container {
+  display: flex;
+  justify-content: space-between;
+}
+.main_preview__block .main_preview.container .main_preview__article {
+  margin-right: 45px;
+}
+.main_preview__block .main_preview.container .main_preview__article .main_preview__item {
+  font-size: 25px;
+}
+.main_preview__block .main_preview.container .main_preview__article .main_preview__text {
+  font-size: 25px;
+}
+.main_preview__block .main_preview.container .main_preview__article .main_preview__button {
+  padding-top: 10px;
+  font-size: 25px;
+}
+.main_preview__block .main_preview.container .main_preview__article .main_preview__button button {
+  background-color: #ff2d2d;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 50px;
+}
+.main_preview__block .main_preview.container .main_preview__article .main_preview__button button:hover {
+  background-color: #313030;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

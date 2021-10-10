@@ -1,0 +1,50 @@
+.about_us_main__block {
+    
+    .about_us__info.container{
+        display: flex;
+        justify-content: space-between;
+        .about_us_left__info{
+            margin-right: 50px;
+            font-size: 25px;
+            .about_us__button{
+                padding-top: 10px;
+                button{
+             background-color: $text-color;
+             padding: 10px 15px 10px 15px;
+             border-radius: 8px;
+             text-align: center;
+             text-decoration: none; 
+             margin-top: 100px;
+
+             &:hover{
+                     background-color: $menu-color;
+                     cursor: pointer;
+            }
+                   }
+
+        }
+
+        }
+       
+        .about_us_right__info{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: calc(1283px / 2);
+            margin: 0 auto;
+            font-size: 25px;
+            
+          .about_us__block{
+              flex: 0 1 50%;
+              min-height: 100px;
+              margin-bottom: 20px;
+              img{
+                  width: 40px;
+                  height: 40px;
+                  
+              }
+          }
+        }
+    }
+    
+}
